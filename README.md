@@ -17,6 +17,15 @@ Rede neural pra reconhecer dígitos escritos à mão, comparando MLP com CNN
 ## Arquitetura
 Input(28,28,1) → Conv2D(5, 3x3, relu) → MaxPooling2D(2x2) → Flatten → Dense(128, relu) → Dense(64, relu) → Dense(10, softmax)
 
+## Instalação
+Para rodar os notebooks com TensorFlow e MLflow:
+
+```bash
+pip install tensorflow mlflow tensorboard
+```
+
+O `tensorboard` é necessário quando o `mlflow.autolog()` registra métricas do TensorFlow.
+
 ## Como rodar
 ```python
 import sys
